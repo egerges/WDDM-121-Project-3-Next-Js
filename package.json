@@ -2,9 +2,9 @@
   "name": "website",
   "version": "0.0.1",
   "private": true,
-  "engines" : { 
-    "npm" : "8.5.0",
-    "node" : "16.14.2"
+  "engines": {
+    "npm": "8.5.0",
+    "node": "16.14.2"
   },
   "scripts": {
     "dev": "next dev",
