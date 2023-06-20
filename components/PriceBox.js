@@ -1,3 +1,4 @@
+"use client"
 // Font Awesome Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/fontawesome-free-solid';

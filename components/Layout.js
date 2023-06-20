@@ -1,3 +1,4 @@
+"use client"
 // NextJS Components
 import Head from "next/head";
 import Link from "next/link";
@@ -32,7 +33,9 @@ export default function Layout({ children, home, contact }) {
       ( /* Render Link to go back home */
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Go Back</a>
+            {/* <a> */}
+            ← Go Back
+            {/* </a> */}
           </Link>
         </div>
       )}
