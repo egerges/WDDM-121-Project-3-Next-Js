@@ -1,8 +1,10 @@
+"use client"
 // NextJS Components
+
 import Head from "next/head";
 
 // Custom Components
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/Layout";
 import PriceBox from "../components/PriceBox";
 
 // Styles

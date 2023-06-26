@@ -1,5 +1,6 @@
+"use client"
 // NextJS Components
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 // Styles
@@ -10,7 +11,7 @@ export default function BlogPostPreview(props) {
     return (
         <div className={utilStyles.BlogPostPreview + " bg-slate-100 rounded-xl p-8 dark:bg-slate-800"}>
             <Link href={"/posts/" + data.id}>
-                <a className="text-cyan-800">
+                {/* <a className="text-cyan-800"> */}
                     <Image 
                         className={"w-full h-full object-cover rounded-lg"}
                         src={data.url}
@@ -18,7 +19,7 @@ export default function BlogPostPreview(props) {
                         width={"800px"}
                         height={"470px"}/>
                     <h4 className="relative p-3 text-slate-500 hover:text-cyan-800">{data.title}</h4>
-                </a>
+                {/* </a> */}
             </Link>
         </div>
     )

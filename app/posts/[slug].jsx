@@ -1,6 +1,7 @@
+"use client";
 // NextJS Components
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 // Custom Components
 import Layout from "../../components/layout";
@@ -19,12 +20,13 @@ export default function FirstPost(props) {
         </Head>
 
         <h1 className="font-serif text-sky-600">{post.title}</h1>
-        <Image 
+        <Image
           className="rounded-lg"
           src={post.url}
           alt={post.alt}
           width={"1920px"}
-          height={"1080px"}/>
+          height={"1080px"}
+        />
 
         <p className="font-mono text-sky-300">{post.description}</p>
       </Layout>
@@ -38,14 +40,14 @@ export const getStaticPaths = () => {
   return {
     paths,
     fallback: false,
-  }
-}
+  };
+};
 
 export const getStaticProps = ({ params }) => {
   const postData = getPostBySlug(params.slug);
   return {
     props: {
-      post: postData
-    }
+      post: postData,
+    },
   };
-}
+};

@@ -13,10 +13,14 @@ export default function Header() {
           </div>
           <div className={styles.navLinks}>
             <Link href="/">
-                <a className={styles.NavLinkItem + " no-underline hover:overline text-sky-300 hover:text-sky-500 hover:decoration-sky-200"}>Home</a>
+                {/* <a className={styles.NavLinkItem + " no-underline hover:overline text-sky-300 hover:text-sky-500 hover:decoration-sky-200"}> */}
+                Home
+                {/* </a> */}
             </Link>
             <Link href="/contact">
-                <a className={styles.NavLinkItem + " no-underline hover:overline text-sky-300 hover:text-sky-500 hover:decoration-sky-200"}>Contact</a>
+                {/* <a className={styles.NavLinkItem + " no-underline hover:overline text-sky-300 hover:text-sky-500 hover:decoration-sky-200"}> */}
+                Contact
+                {/* </a> */}
             </Link>
           </div>
       </header>

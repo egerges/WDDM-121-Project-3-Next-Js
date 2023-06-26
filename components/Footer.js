@@ -14,10 +14,10 @@ export default function Footer() {
         </div>
         <ul className="list-inline">
             <Link href="/">
-                <a className="list-inline-item">Home</a>
+                Home
             </Link>
             <Link href="/contact">
-                <a className="list-inline-item">Contact</a>
+               Contact
             </Link>
         </ul>
         <p className="copyright">Elio Gerges Photography © {new Date().getFullYear()}</p>

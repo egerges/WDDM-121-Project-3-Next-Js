@@ -1,3 +1,4 @@
+"use client";
 // NextJS Components
 import Head from "next/head";
 
@@ -21,14 +22,18 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <p className="font-serif text-sky-600">Who is Elio?</p>
         <p className="font-mono text-sky-400">
-          Elio Gerges is a photographer and software developer based in Toronto, ON.<br/>
-          He shoots a diverse range of subjects, all with a clean and elegant aesthetic.<br/>
-          Here are some of his work.<br/><br/>
+          Elio Gerges is a photographer and software developer based in Toronto,
+          ON.
+          <br />
+          He shoots a diverse range of subjects, all with a clean and elegant
+          aesthetic.
+          <br />
+          Here are some of his work.
+          <br />
+          <br />
         </p>
 
-        <div className={utilStyles.posts}>
-          {getBlogPostPreviewData()}
-        </div>
+        <div className={utilStyles.posts}>{getBlogPostPreviewData()}</div>
       </section>
     </Layout>
   );
@@ -36,9 +41,9 @@ export default function Home() {
 
 const getBlogPostPreviewData = () => {
   const posts = [];
-  getAllPosts().forEach(post => {
-    posts.push(<BlogPostPreview key={post.id} data={post}/>);
-  })
+  getAllPosts().forEach((post) => {
+    posts.push(<BlogPostPreview key={post.id} data={post} />);
+  });
 
   return posts;
-}
+};
